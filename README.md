@@ -1,8 +1,5 @@
 # Developer Profile Playgroun
-
-## Repository
-
-https://github.com/Shivam-k-y/developer-profile-playground
+A full-stack application to showcase and manage developer profiles with search capabilities.
 
 ## Additional Resources
 
