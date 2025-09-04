@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Profile = require('./models/Profile');
+const Profile = require('./models/profile');
 require('dotenv').config();
 
 const sampleData = {
@@ -60,14 +60,6 @@ const sampleData = {
       links: {
         github: "https://github.com/Shivam-k-y/Food-app-v1",
         demo: "https://food-app-nine-sand.vercel.app/"
-      }
-    },{
-      title: "Currency Converter",
-      description: "Built a real-time currency converter supporting 50+ currencies for instant conversion",
-      skills: ["JavaScript", "API Integration", "CSS"],
-      links: {
-        github: "https://github.com/Shivam-k-y/CurrencyConvertor",
-        demo: "#"
       }
     }
   ],
