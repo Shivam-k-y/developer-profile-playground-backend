@@ -96,10 +96,7 @@ const sampleData = {
 
 const seedDatabase = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/developerProfile', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/developerProfile');
 
     // Delete existing data
     await Profile.deleteMany({});
