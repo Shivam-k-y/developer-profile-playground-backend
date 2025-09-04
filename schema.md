@@ -1,104 +1,92 @@
 # Developer Profile Playground
 
-## A full-stack application to showcase and manage developer profiles with search capabilities.
+### A full-stack application to showcase and manage developer profiles with search capabilities.
 
-# Architecture
-Frontend: React.js with functional components and hooks
+## Architecture
+### Frontend: React.js with functional components and hooks
+### Backend: Node.js with Express.js
+### Database: MongoDB with Mongoose ODM
 
-Backend: Node.js with Express.js
+## Deployment:
 
-Database: MongoDB with Mongoose ODM
+### Frontend: vercel
+### Backend: vercel
+### Database: MongoDB Atlas
 
-Deployment:
+## Features
+### CRUD operations for developer profiles
+### Search projects by skills
+### Global search across all profile data
+### Skills listing with click-to-filter functionality
+### Responsive UI
 
-Frontend: vercel
+## Live Demo
+### Frontend: https://your-profile-playground.netlify.app
 
-Backend: vercel
+### Backend API: https://your-backend.railway.app
 
-Database: MongoDB Atlas
+### Health Check: https://your-backend.railway.app/health
 
-# Features
-CRUD operations for developer profiles
+## Repository
+### https://github.com/your-username/developer-profile-playground
 
-Search projects by skills
+# Local Setup
+## Prerequisites
+### Node.js (v14 or higher)
 
-Global search across all profile data
+### MongoDB (local or Atlas)
 
-Skills listing with click-to-filter functionality
+### Git
 
-Responsive UI
+## Backend Setup
+### Clone the repository
+### Navigate to backend directory: cd backend
+### Install dependencies: npm install
+### Create .env file:
 
-# Live Demo
-Frontend: https://your-profile-playground.netlify.app
+#### text
+#### MONGODB_URI=mongodb://localhost:27017/developerProfile
+#### PORT=5000
+### Seed the database: npm run seed
 
-Backend API: https://your-backend.railway.app
+### Start the server: npm run dev
 
-Health Check: https://your-backend.railway.app/health
+## Frontend Setup
+### Navigate to frontend directory: cd frontend
 
-Repository
-https://github.com/your-username/developer-profile-playground
+### Install dependencies: npm install
 
-Local Setup
-Prerequisites
-Node.js (v14 or higher)
+### Create .env file:
 
-MongoDB (local or Atlas)
+#### text
+#### REACT_APP_API_URL=http://localhost:5000
+#### Start the application: npm start
 
-Git
+### Production Deployment
+#### Backend (Railway)
+#### Connect your GitHub repo to Railway
 
-Backend Setup
-Clone the repository
+#### Set environment variables in Railway dashboard
 
-Navigate to backend directory: cd backend
+#### Deploy automatically on push to main
 
-Install dependencies: npm install
+### Frontend (Netlify)
+#### Build the app: npm run build
 
-Create .env file:
+#### Drag and drop build folder to Netlify or connect GitHub
 
-text
-MONGODB_URI=mongodb://localhost:27017/developerProfile
-PORT=5000
-Seed the database: npm run seed
-
-Start the server: npm run dev
-
-Frontend Setup
-Navigate to frontend directory: cd frontend
-
-Install dependencies: npm install
-
-Create .env file:
-
-text
-REACT_APP_API_URL=http://localhost:5000
-Start the application: npm start
-
-Production Deployment
-Backend (Railway)
-Connect your GitHub repo to Railway
-
-Set environment variables in Railway dashboard
-
-Deploy automatically on push to main
-
-Frontend (Netlify)
-Build the app: npm run build
-
-Drag and drop build folder to Netlify or connect GitHub
-
-Set environment variable: REACT_APP_API_URL to your deployed backend URL
+#### Set environment variable: REACT_APP_API_URL to your deployed backend URL
 
 Database (MongoDB Atlas)
-Create a free cluster on MongoDB Atlas
+#### Create a free cluster on MongoDB Atlas
 
-Get connection string
+#### Get connection string
 
-Update MONGODB_URI in your production environment
+#### Update MONGODB_URI in your production environment
 
-Database Schema
-The application uses a single Profile collection with the following structure:
-
-{
+## Database Schema
+#### The application uses a single Profile collection with the following structure:
+ {
   name: String,
   email: String,
   education: [{
@@ -138,26 +126,26 @@ The application uses a single Profile collection with the following structure:
 }
 
 
-API Documentation
-Endpoints
-GET /api/profile - Get profile data
+## API Documentation
+### Endpoints
+### GET /api/profile - Get profile data
 
-POST /api/profile - Create/update profile
+### POST /api/profile - Create/update profile
 
-GET /api/profile/projects?skill=python - Get projects by skill
+### GET /api/profile/projects?skill=python - Get projects by skill
 
-GET /api/profile/skills/top - Get all skills
+### GET /api/profile/skills/top - Get all skills
 
-GET /api/profile/search?q=react - Search across all content
+### GET /api/profile/search?q=react - Search across all content
 
-GET /health - Health check
+### GET /health - Health check
 
-Future Enhancements
-Add authentication for write operations
+## ### Future Enhancements
+### Add authentication for write operations
 
-Improve input validation and error handling
+### Improve input validation and error handling
 
-Support for multiple profiles
+### Support for multiple profiles
 
-Resume
-Your Name's Resume
+## Resume
+#### Your Name's Resume
